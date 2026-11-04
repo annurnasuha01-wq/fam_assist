@@ -1,0 +1,52 @@
+name: fam_assist
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+  # Sign in with Google
+  google_sign_in: ^6.2.2
+
+  # Local, per-device storage for the login lockout counter (see AuthService)
+  shared_preferences: ^2.3.2
+
+  # Voice input, NLP date parsing, notifications
+  speech_to_text: ^7.0.0
+  jiffy: ^6.3.1
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.9.4
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+# App icon settings (used by flutter_launcher_icons)
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/logo.png"
+  adaptive_icon_foreground_inset: 25

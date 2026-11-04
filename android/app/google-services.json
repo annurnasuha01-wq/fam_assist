@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "151419648877",
+    "project_id": "fam-assist-ee830",
+    "storage_bucket": "fam-assist-ee830.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151419648877:android:429c3a20bc7dc2c2d07864",
+        "android_client_info": {
+          "package_name": "com.example.fam_assist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151419648877-ruj8cgr557heunbltia62k5j7v0iak5n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fam_assist",
+            "certificate_hash": "c28fc1c8702250b5051c081a15d1a7aabddbc8b9"
+          }
+        },
+        {
+          "client_id": "151419648877-tfbgqelue8oit6nsg4n8jsqe2tp6rv50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBhyfdDMqSMNgBJvF7flQKPGsVwBJ8anQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151419648877-tfbgqelue8oit6nsg4n8jsqe2tp6rv50.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "151419648877-lg43h2o79p8be4of6urg4n20cldq9187.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.famAssist"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
