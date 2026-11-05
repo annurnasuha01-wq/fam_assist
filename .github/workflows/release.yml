@@ -1,5 +1,5 @@
-name: FamAssist Production Release Build
-
+name: FamAssist Production Release
+run-name: FamAssist Android Build (Release)
 on:
   push:
     branches:
