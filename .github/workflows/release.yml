@@ -1,5 +1,5 @@
-name: Build Android & iOS Release
-run-name: FamAssist Production Release Build
+name: FamAssist Production Release Build
+
 on:
   push:
     branches:
@@ -36,34 +36,3 @@ jobs:
         with:
           name: android-apk-release
           path: build/app/outputs/flutter-apk/app-release.apk
-
-  build-ios:
-    name: Build iOS IPA
-    runs-on: macos-13
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: "temurin"
-          java-version: "17"
-
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: "3.29.0"
-          channel: "stable"
-
-      - name: Install dependencies
-        run: flutter pub get
-
-      - name: Build iOS IPA
-        run: flutter build ipa --no-codesign
-
-      - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ios-ipa-release
-          path: build/ios/archive/Runner.xcarchive
